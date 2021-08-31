@@ -1,0 +1,258 @@
+// main content- nav and products//
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+
+  .nav-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    /* Style for "Produkty na godzine" */
+    p {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      color: #1a171b;
+      font-family: "Gotham-Book";
+      font-size: 15px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 32px;
+      text-align: left;
+      text-transform: uppercase;
+    }
+    /* Style for "10:00" */
+    span {
+      display: flex;
+      font-family: "Gotham";
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+    }
+  }
+  // Style for ' Akcja goracy czwartek nie łaczy sie...' //
+  .nav-two {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    // Style for '!' //
+    span {
+      width: 22px;
+      height: 22px;
+      border-radius: 100%;
+      background-color: $backgroundColor;
+      p {
+        padding-top: 2px;
+        color: #ffffff;
+        transform: translateX(-9px);
+      }
+    }
+  }
+  p {
+    /* Text style for "Akcja goracy czwartek nie łaczy sie..." */
+    color: #000000;
+    font-family: "Gotham-Book";
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 38px;
+    text-align: center;
+    margin-left: 13px;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+  }
+}
+button {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  color: #1a171b;
+  font-family: "Gotham-Book";
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  background-color: #ffffff;
+  border: none;
+  color: $redElementColor;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  color: #1a171b;
+  font-family: "Gotham-Book";
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  padding-bottom: 15px;
+}
+.first_row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.in_row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-items: center;
+}
+// container with products//
+.product- {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 180px;
+  height: 260px;
+  border: 1px solid #ebebeb;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  .head {
+    color: #000000;
+    .quantity {
+      width: 178px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #000000;
+      font-family: "Gotham-Book";
+      font-size: 13px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 26px;
+      text-align: left;
+      /* Text style for "s, ztuk: 1" */
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      img {
+        width: 18px;
+        height: 18px;
+        padding-right: 5px;
+      }
+    }
+    .save {
+      width: 178px;
+      height: 39px;
+      border: 1px solid $redElementColor;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $redElementColor;
+      font-family: "Gotham";
+      font-weight: 700;
+      font-size: 15px;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      p {
+        color: $redElementColor;
+        font-family: "Gotham-Book";
+        font-size: 15px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 24px;
+        text-align: left;
+      }
+    }
+  }
+  .image {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 150px;
+      height: 80px;
+    }
+  }
+
+  .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    // style for new price //
+    .prices {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+    #new-price {
+      color: $redElementColor;
+      font-family: "Gotham";
+      font-size: 15px;
+      font-weight: 500;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 24px;
+      text-align: left;
+      /* Text style for "3, 690 zł" */
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+    }
+    // style for old price //
+    #old-price {
+      color: #1a171b;
+      font-family: "Gotham-Book";
+      font-size: 12px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 20px;
+      text-align: left;
+      text-decoration: line-through;
+      /* Text style for "5, 690 zł" */
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+    }
+  }
+}
+  .desc-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+
+  #name,
+  #company {
+    color: #000000;
+    font-family: "Gotham-Book";
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 19px;
+    text-align: center;
+    /* Text style for "K, anapa 3" */
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+  }
+  #company {
+    color: #9f9f9f;
+  }
+}
+}
